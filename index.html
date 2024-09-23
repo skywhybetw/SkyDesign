@@ -52,11 +52,29 @@
         .button:hover {
             background-color: #2aa46d;
         }
+        #social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
         footer {
             position: absolute;
             bottom: 20px;
             text-align: center;
             color: #fff;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Расстояние между иконками */
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 40px; /* Размер иконок */
+            height: auto; /* Автоматическая высота */
+            transition: transform 0.3s; /* Анимация увеличения */
+        }
+        .social-icons img:hover {
+            transform: scale(1.1); /* Увеличение при наведении */
         }
     </style>
 </head>
@@ -69,6 +87,18 @@
         <button class="button" onclick="window.location.href='examples.html'">Посмотреть примеры работ</button>
         <button class="button" onclick="window.location.href='https://vk.com/im?sel=-226809180'">Заказать</button>
     </header>
+
+    <div id="social-media">
+        <h2 style="color: #fff;">Связь с нами:</h2>
+        <div class="social-icons">
+            <a href="https://vk.com/skydesigned" target="_blank">
+                <img src="images/vk-icon.png" alt="VK">
+            </a>
+            <a href="https://discord.com/invite/sadbe1f" target="_blank">
+                <img src="images/discord-icon.png" alt="Discord">
+            </a>
+        </div>
+    </div>
 
     <footer>
         <p>© 2024 SkyDesign. Все права защищены.</p>
