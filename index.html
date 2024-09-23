@@ -57,10 +57,10 @@
             margin-top: 20px;
         }
         footer {
-            position: absolute;
-            bottom: 20px;
+            position: relative; /* Изменено с absolute на relative */
             text-align: center;
             color: #fff;
+            padding: 20px 0; /* Добавлен отступ для футера */
         }
         .social-icons {
             display: flex;
@@ -75,6 +75,13 @@
         }
         .social-icons img:hover {
             transform: scale(1.1); /* Увеличение при наведении */
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 600px) {
+            footer {
+                padding: 40px 0; /* Увеличенный отступ для футера на мобильных устройствах */
+            }
         }
     </style>
 </head>
@@ -95,8 +102,8 @@
                 <img src="images/vk-icon.png" alt="VK">
             </a>
             <a href="https://discord.com/users/484787388896247813" target="_blank">
-    <img src="images/discord-icon.png" alt="Discord">
-</a>
+                <img src="images/discord-icon.png" alt="Discord">
+            </a>
         </div>
     </div>
 
