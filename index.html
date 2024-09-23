@@ -12,8 +12,6 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Центрирование содержимого */
-            align-items: center;
             min-height: 100vh; /* Минимальная высота 100% высоты окна */
             color: #333;
             opacity: 0; /* Скрываем тело при загрузке */
@@ -77,12 +75,13 @@
         }
         #social-media {
             text-align: center;
-            margin-top: 20px;
+            margin-top: auto; /* Это позволяет поднять социальные иконки к верху */
         }
         footer {
             text-align: center;
             color: #fff;
             padding: 20px 0;
+            margin-top: auto; /* Это гарантирует, что футер будет внизу */
         }
         .social-icons {
             display: flex;
